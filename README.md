@@ -2,17 +2,17 @@
 
 chaos-index MCP — wraps StupidAPIs (requires X-API-Key)
 
-Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `chaos_index_calculate` | Combines Bitcoin price, ISS coordinates, city temperatures, earthquake magnitude, and lunar phase into a single chaos score. Methodology available upon request. Please do not request it. |
+| `chaos_index_calculate` | Calculate a chaos score that combines Bitcoin volatility, ISS orbital position, global temperatures, earthquake activity, and lunar phase. Returns a single chaos index (0-100) plus breakdown of each component\'s contribution. |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
@@ -24,11 +24,32 @@ Add to your MCP client config:
 }
 ```
 
-Or use the CLI:
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx pipeworx use chaos-index
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Chaos Index data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
