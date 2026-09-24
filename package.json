@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-chaos-index",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "chaos-index MCP — wraps StupidAPIs (keyless — no credential needed)",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-5df0c76238dcf1d1324f7481f3d76e2e7911433955c5324da6908604cefce8d9",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
