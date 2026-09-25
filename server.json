@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/chaos-index",
   "title": "Chaos Index",
   "description": "chaos-index MCP — wraps StupidAPIs (keyless — no credential needed)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "websiteUrl": "https://pipeworx.io/packs/chaos-index",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-chaos-index",
